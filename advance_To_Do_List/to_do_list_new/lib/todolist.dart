@@ -377,18 +377,18 @@ class ToDoListState extends State {
                                               await updateList();
                                               setState(() {});
                                             },
-                                            // child: Container(
-                                            //   height: 42.5,
-                                            //   width: 42.5,
-                                            //   decoration: const BoxDecoration(
-                                            //       shape: BoxShape.circle,
-                                            //       color: Color.fromARGB(
-                                            //           255, 33, 47, 243)),
-                                            //   child: const Icon(
-                                            //     Icons.delete,
-                                            //     color: Colors.white,
-                                            //   ),
-                                            // ),
+                                            child: Container(
+                                              height: 42.5,
+                                              width: 42.5,
+                                              decoration: const BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  color: Color.fromARGB(
+                                                      255, 33, 47, 243)),
+                                              child: const Icon(
+                                                Icons.delete,
+                                                color: Colors.white,
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       )
@@ -468,39 +468,39 @@ class ToDoListState extends State {
                                                 ),
                                               ],
                                             ),
-                                            GestureDetector(
-                                                onTap: () async {
-                                                  await checkBoxUpdate(
-                                                      mapEntry[index].taskId);
-                                                  updateList();
-                                                  setState(() {});
-                                                  print(
-                                                      "i am here in gestrureTedector");
-                                                  print(
-                                                      "in gestureDetector :$MapEntry");
-                                                },
-                                                child: Container(
-                                                  height: 20,
-                                                  width: 20,
-                                                  decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          const BorderRadius
-                                                              .all(
-                                                              Radius.circular(
-                                                                  100)),
-                                                      border:
-                                                          Border.all(width: 2)),
-                                                  child: (mapEntry[index]
-                                                              .checkTask ==
-                                                          1)
-                                                      ? const CircleAvatar(
-                                                          child: Icon(
-                                                            Icons.check,
-                                                            size: 18,
-                                                          ),
-                                                        )
-                                                      : Container(),
-                                                )),
+                                            // GestureDetector(
+                                            //     onTap: () async {
+                                            //       await checkBoxUpdate(
+                                            //           mapEntry[index].taskId);
+                                            //       updateList();
+                                            //       setState(() {});
+                                            //       print(
+                                            //           "i am here in gestrureTedector");
+                                            //       print(
+                                            //           "in gestureDetector :$MapEntry");
+                                            //     },
+                                            //     child: Container(
+                                            //       height: 20,
+                                            //       width: 20,
+                                            //       decoration: BoxDecoration(
+                                            //           borderRadius:
+                                            //               const BorderRadius
+                                            //                   .all(
+                                            //                   Radius.circular(
+                                            //                       100)),
+                                            //           border:
+                                            //               Border.all(width: 2)),
+                                            //       child: (mapEntry[index]
+                                            //                   .checkTask ==
+                                            //               1)
+                                            //           ? const CircleAvatar(
+                                            //               child: Icon(
+                                            //                 Icons.check,
+                                            //                 size: 18,
+                                            //               ),
+                                            //             )
+                                            //           : Container(),
+                                            //     )),
                                           ],
                                         ),
                                         const SizedBox(
